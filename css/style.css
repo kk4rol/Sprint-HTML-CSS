@@ -1,0 +1,124 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.elms-sans {
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+@media (max-width: 480px) {
+
+header {
+  flex-direction: column;
+}
+
+nav {
+  gap: 10px;
+}
+
+  footer{
+    flex-direction: column;
+    height: 300px;
+  }
+
+  footer div {
+    display: flex;
+    align-items: center;
+  }
+
+  #descricaoCarro {
+    width: 100% !important;
+    margin: 0 !important; 
+  }
+}
+
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: "Elms Sans";
+}
+
+header {
+
+    font-family: "Elms Sans";
+    font-size: 20px;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+main {
+    height: 90vh;
+    font-size: 18px;
+    font-family: "Elms Sans";
+}
+
+main img {
+  width: 100%;
+}
+
+#descricaoCarro {
+  width: 700px;
+  border: #00095b;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00095b;
+    color: white;
+    height: 80px;
+    font-family: "Elms Sans";
+    font-size: 18px;
+    padding: 0% 2%;
+}
+
+.divRedes{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+footer div {
+  flex: 20%;
+}
+
+a:link {
+  color: blue;
+}
+
+
+a:visited {
+  color: blue;
+}
+
+
+a:hover {
+  color: gray;
+}
+
+
+a:active {
+  color: blue;
+}
