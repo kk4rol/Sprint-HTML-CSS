@@ -21,7 +21,7 @@
                  <a href="contato.html">Contato</a>
             </nav>
         </center> 
-        <hr>
+
     </header> 
 
     <main>
@@ -33,10 +33,10 @@
         <section class="divFormulario">
 
             <div style="margin: 15px 0;">
-                <span style="margin-bottom: 10px;">Sobre você</span>
+                <span style="margin-bottom: 10px;"><b>Sobre você</b></span>
             </div> 
 
-            <form action="">
+            <form onsubmit="Post(this);">
 
                 <input class="campo" required type="text" placeholder="Nome">
                 <br><br> 
@@ -55,7 +55,7 @@
                 </select>
                 <br><br>
 
-                <input id="campoMensagem" required type="text" placeholder="Escreva sua mensagem aqui" style="text-align: left; vertical-align: top;">
+                <input id="campoMensagem" required type="text" placeholder="Escreva sua mensagem aqui">
 
                 <br><br>
                 <button type="submit">Enviar</button>
@@ -82,6 +82,8 @@
         </div>
         
     </footer>
+
+    <script src="js/form.js"></script>
 
 </body>
 </html>

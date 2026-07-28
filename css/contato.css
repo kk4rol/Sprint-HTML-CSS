@@ -32,14 +32,15 @@ body {
 }
 
 header {
-
     font-family: "Elms Sans";
     font-size: 20px;
     color: blue;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 30px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
 }
 
 header a {
@@ -73,14 +74,26 @@ main {
   padding: 10px 5px;
 }
 
+#campoMensagem::placeholder {
+  text-align: start;
+}
+
+select.campo {
+  color: #807d7d;
+  width: 292px;
+  border-radius: 10px;
+  padding: 10px 5px;
+}
+
 button {
     background-color: #00095b;
     color: white;
-    width: 100px;
+    width: 150px;
     border-radius: 16px;
     padding: 10px 0;
     font-family: "Elms Sans";
     font-size: 16px;
+    float: right;
 }
 
 button:hover {

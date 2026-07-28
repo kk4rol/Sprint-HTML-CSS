@@ -10,7 +10,6 @@ padding: 0;
   font-optical-sizing: auto;
 }
 
-
 @media (max-width: 480px) {
 
 header {
@@ -37,7 +36,6 @@ nav {
   }
 }
 
-
 body {
     height: 100vh;
     box-sizing: border-box;
@@ -45,14 +43,15 @@ body {
 }
 
 header {
-
     font-family: "Elms Sans";
     font-size: 20px;
     color: blue;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 30px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
 }
 
 header a {
@@ -62,6 +61,27 @@ header a {
 nav {
   display: flex;
   gap: 30px;
+}
+
+div#carousel {
+    height: 46vh;
+    width: 100%;
+     max-height: 628px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+div#carousel-title a {
+    text-decoration: none;
+}
+
+div#carousel-title  {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 main {
