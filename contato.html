@@ -13,7 +13,10 @@
 
 <body>
     <header>
-        <a href="index.html"><img src="img/ford-96.png" alt="Logo da Ford"></a> 
+        <div class="logo">
+            <a href="index.html"><img src="img/ford-96.png" alt="Logo da Ford"></a>
+        </div>
+         
         <center>
             <nav>
                 <a href="index.html">Home</a>
@@ -33,19 +36,16 @@
         <section class="divFormulario">
 
             <div style="margin: 15px 0;">
-                <span style="margin-bottom: 10px;"><b>Sobre você</b></span>
+                <span style="margin: 10px 8px;"><b>Sobre você</b></span>
             </div> 
 
             <form onsubmit="Post(this);">
 
-                <input class="campo" required type="text" placeholder="Nome">
-                <br><br> 
+                <input class="campo" required type="text" placeholder="Nome"> 
 
                 <input class="campo" required type="email" placeholder="E-mail"> 
-                <br><br>
 
                 <input class="campo" required type="text" placeholder="Telefone">
-                <br><br>
 
                 <select class="campo" required name="" id="">
                     <option value="0" selected disabled hidden >Tipo de contato</option>
@@ -53,11 +53,9 @@
                     <option value="2">Reclamação</option>
                     <option value="3">Solicitação</option>
                 </select>
-                <br><br>
 
-                <input id="campoMensagem" required type="text" placeholder="Escreva sua mensagem aqui">
+                <input id="campoMensagem" required type="text" placeholder="Escreva sua mensagem aqui"> <br>
 
-                <br><br>
                 <button type="submit">Enviar</button>
 
             </form>
