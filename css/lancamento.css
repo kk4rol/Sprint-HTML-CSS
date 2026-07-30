@@ -68,6 +68,13 @@ main {
     font-family: "Elms Sans";
 }
 
+.descricaoRanger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 ul.cardCarros {
     display: block;
     text-align: center;

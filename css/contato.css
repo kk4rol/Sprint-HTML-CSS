@@ -85,21 +85,17 @@ main {
 
 #campoMensagem {
   border: 1px solid #cccccc;
-  width: 300px;
+  width: 292px;
   height: 100px;
   margin: 8px;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   font-size: 13px;
-}
-
-#campoMensagem::placeholder {
-  text-align: start;
 }
 
 select.campo {
   color: #807d7d;
-  width: 310px;
+  width: 312px;
   border: 1px solid #cccccc;
   border-radius: 10px;
   padding: 5px;
