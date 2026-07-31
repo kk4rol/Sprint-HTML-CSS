@@ -79,8 +79,9 @@ main {
     border-radius: 10px;
     height: 26px;
     margin: 8px;
-    font-size: 13px;
+    font-size: 14px;
     padding: 5px;
+    font-family: "Elms Sans";
 }
 
 #campoMensagem {
@@ -90,7 +91,8 @@ main {
   margin: 8px;
   border-radius: 10px;
   padding: 10px;
-  font-size: 13px;
+  font-size: 14px;
+  font-family: "Elms Sans";
 }
 
 select.campo {
@@ -101,7 +103,7 @@ select.campo {
   padding: 5px;
   height: 36px;
   margin: 8px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 button {
