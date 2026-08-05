@@ -11,10 +11,10 @@ class Carousel {
 
     
       
-    static Start(arr){
-        if(arr){
+    Start(carouselArr){
+        if(carouselArr){
 
-            if(arr.length > 0){
+            if(carouselArr.length > 0){
                 Carousel._sequence = 0;
                 Carousel._size = arr.length;
                 Carousel.Next(); //start
@@ -26,7 +26,7 @@ class Carousel {
         }
     }
 
-    static Next(){
+    Next(){
         
     }
 };

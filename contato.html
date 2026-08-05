@@ -41,20 +41,20 @@
 
             <form onsubmit="Post(this);">
 
-                <input class="campo" required type="text" placeholder="Nome"> 
+                <input id="nomeid" name="nome" class="campo" required type="text" placeholder="Nome"> 
 
-                <input class="campo" required type="email" placeholder="E-mail"> 
+                <input name="email" class="campo" required type="email" placeholder="E-mail"> 
 
-                <input class="campo" required type="text" placeholder="Telefone">
+                <input name="telefone" class="campo" required type="text" placeholder="Telefone">
 
-                <select class="campo" required name="" id="">
+                <select class="campo" required name="tipoDeContato">
                     <option value="0" selected disabled hidden >Tipo de contato</option>
                     <option value="1">Elogio</option>
                     <option value="2">Reclamação</option>
                     <option value="3">Solicitação</option>
                 </select>
 
-                <textarea id="campoMensagem" placeholder="Escreva sua mensagem aqui"></textarea> <br>
+                <textarea name="mensagem" id="campoMensagem" placeholder="Escreva sua mensagem aqui"></textarea> <br>
                 
                 <button type="submit">Enviar</button>
 
