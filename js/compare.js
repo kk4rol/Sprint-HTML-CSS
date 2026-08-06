@@ -3,10 +3,19 @@
 let carArr = [];
 
 class Car {
-   
 
     constructor(nome, preco, alturaCacamba, alturaVeiculo, alturaSolo, capacidadeCarga, motor, potencia, volumeCacamba, roda, image){
-       
+       this.nome = nome;
+       this.preco = preco;
+       this.alturaCacamba = alturaCacamba;
+       this.alturaVeiculo = alturaVeiculo;
+       this.alturaSolo = alturaSolo;
+       this.capacidadeCarga = capacidadeCarga;
+       this.motor = motor;
+       this.potencia = potencia;
+       this.volumeCacamba = volumeCacamba;
+       this.roda = roda;
+       this.image = image;
     }
 } 
 
@@ -48,5 +57,29 @@ function HideCompare(){
 }
 
 function UpdateCompareTable() {
-    
+   let tbody = document.getElementById("compare");
+
+    tbody.innerHTML=""; 
+
+    for(i=0;i<carArr.length;i++){
+
+        let carObj = carArr[i];
+        let linha = `
+            <tr>
+                <td>${carObj.nome}</td>
+                <td>${carObj.preco}</td>
+                <td>${carObj.alturaCacamba}</td>
+                <td>${carObj.alturaVeiculo}</td>
+                <td>${carObj.alturaSolo}</td>
+                <td>${carObj.capacidadeCarga}</td>
+                <td>${carObj.motor}</td>
+                <td>${carObj.potencia}</td>
+                <td>${carObj.volumeCacamba}</td>
+                <td>${carObj.roda}</td>
+                <td>${carObj.image}</td>
+            </tr>
+        
+        `
+        tbody.innerHTML+=linha;
+    }
 }

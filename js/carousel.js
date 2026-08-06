@@ -1,5 +1,4 @@
 
-
 //carousel
 
 //Array storage class
