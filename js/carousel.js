@@ -8,12 +8,19 @@ let carouselArr = [];
 //class Carousel
 class Carousel {
 
+    constructor(imagem, texto, link ){
+        this.imagem = imagem;
+        this.texto = texto;
+        this.link = link;
+    }
     
       
-    Start(carouselArr){
-        if(carouselArr){
+    static Start(arr){
 
-            if(carouselArr.length > 0){
+        if(arr){
+
+            if(arr.length > 0){
+                Carousel._arr = arr;
                 Carousel._sequence = 0;
                 Carousel._size = arr.length;
                 Carousel.Next(); //start
@@ -25,7 +32,26 @@ class Carousel {
         }
     }
 
-    Next(){
-        
+    static Next(){
+
+        let item = Carousel._arr[Carousel._sequence];
+
+        document.getElementById("carousel").innerHTML =
+            `
+            <a href="${item.link}">
+                <img src="img/${item.imagem}"
+                     alt="${item.texto}"
+                     style="width:100%; height:100%; object-fit:cover;">
+            </a>
+            `;
+
+        document.getElementById("carousel-title").innerHTML =
+            `<a href="${item.link}">${item.texto}</a>`;
+
+        Carousel._sequence++;
+
+        if(Carousel._sequence >= Carousel._size){
+            Carousel._sequence = 0;
+        }
     }
-};
+}

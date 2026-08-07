@@ -29,11 +29,6 @@ nav {
     display: flex;
     align-items: center;
   }
-
-  #descricaoCarro {
-    width: 100% !important;
-    margin: 0 !important; 
-  }
 }
 
 body {
@@ -41,6 +36,32 @@ body {
     box-sizing: border-box;
     font-family: "Elms Sans";
 }
+
+html {
+  height: 100%;
+}
+
+div#carousel {
+    height: 66vh;
+    width: 100%;
+    max-height: 628px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+div#carousel-title a {
+    text-decoration: none;
+}
+
+div#carousel-title  {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 
 header {
     display: flex;
@@ -74,42 +95,11 @@ nav {
   gap: 30px;
 }
 
-div#carousel {
-    height: 46vh;
-    width: 100%;
-     max-height: 628px;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-div#carousel-title a {
-    text-decoration: none;
-}
-
-div#carousel-title  {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
 main {
     height: 90vh;
     font-size: 18px;
     font-family: "Elms Sans";
-}
-
-main img {
-  width: 100%;
-}
-
-#descricaoCarro {
-  width: 700px;
-  border: #00095b;
-  border-radius: 16px;
-  padding: 20px;
+    min-height: calc(100% - 167px);
 }
 
 footer {
