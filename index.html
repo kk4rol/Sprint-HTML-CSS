@@ -25,32 +25,17 @@
 
     <main>
         <div id="carousel">
-            <ol class="carrosselIndicadores">
-                <li data-target="#carousel" data-slide-to="0" class="ativo"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-            </ol>
-
-            <div>
-            <!-- Passar para a direita e para a esquerda -->
-            <a class="botaoEsquerdo" href="#carousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="botaoDireito" href="#carousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            </div>
+            <a class="botaoEsquerdo" href="#">❮</a>
+            <a class="botaoDireito" href="#">❯</a>
         </div>
 
-        <div id="carousel-title">
+        <div id="carousel-title"></div>
         
         <script src="js/carousel.js"></script>
 
         <script>
              //insert each image on carousel
-            carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
+            carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ford Ranger 2022. Verifique novidades.","lancamento.html"));
             carouselArr.push(new Carousel("imagem_2.jpg","Ford: a nossa história","#"));
             carouselArr.push(new Carousel("imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
             Carousel.Start(carouselArr);     
